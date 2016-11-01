@@ -6,8 +6,7 @@ body{
 	background: url('images/bathtubbanner.jpg') center 30% no-repeat;
 	background-size: cover;
 	width: 100%;
-	min-height: 475px;
-	max-height: 1200px;
+	height: 600px;
 	border-color: black;
 }
 
