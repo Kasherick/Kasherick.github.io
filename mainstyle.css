@@ -3,12 +3,12 @@ body{
 }
 
 #mainheader {
-	background: url('images/bathtubbanner.jpg') center 60% no-repeat;
+	position-left: 0 0;
+	background: url('images/bathtubbanner.jpg') center center repeat;
 	background-size: cover;
 	width: 100%;
 	min-height: 475px;
 	max-height: 1200px;
-	border-color: black;
 }
 
 
