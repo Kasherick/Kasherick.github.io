@@ -4,11 +4,13 @@ body{
 
 #mainheader {
 	position: relative;
+	position: center;
 	background: url('images/bathtubbanner.png') center no-repeat;
-	background-size: contain;
-	min-width: 920px;
-	max-width: 100%;
+	background-size: cover;
+	min-width: 750px;
+	max-width: 1200px;
 	height: 675px;
+	margin: auto;
 }
 
 .navbar {
@@ -20,8 +22,7 @@ body{
 
 .navbar ul {
 	display: inline-block;
-	width: 750px;
-    border-radius: 25px;
+	width: 100%;
 	padding: 0px;
 	background-color: rgba(0, 0, 0, .6);
 }
