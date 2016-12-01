@@ -20,9 +20,10 @@ body{
 
 .navbar ul {
 	display: inline-block;
-	width: 1200px;
+	width: 750px;
+    border-radius: 25px;
 	padding: 0px;
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, .6);
 }
 
 .navbar ul li {
