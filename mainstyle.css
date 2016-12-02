@@ -23,7 +23,7 @@ body{
 	display: inline-block;
 	width: 100%;
 	padding: 0px;
-	background-color: rgba(92, 4, 184, .6);
+	background-color: rgba(92, 4, 184, .4);
 }
 
 .navbar ul li {
