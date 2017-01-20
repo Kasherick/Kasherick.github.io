@@ -10,3 +10,30 @@ body{
     background-position: top; 
 }
 
+.navbar-inverse {
+	background-color: rgba(0, 0, 0, 0);
+	border-width: 0;
+	padding-top: 8%;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: white;
+    background: #5224C1;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 2000px) {
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {background-color: green;}
+}
+
+.navbar-collapse {
+  text-align:center;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
