@@ -4,23 +4,50 @@ body{
 
 .jumbotron {
 	background-color: blue;
-	height: 100vh;
-	background-image:
-    repeating-radial-gradient(
-      circle at center,
-      #8E18BD,
-      #BF005E
-    );
-
-    display: flex;
-    align-items: center;
+	height: 85vh;
+	background-image: url(images/backbanner.jpg);
+    background-size: cover;
+    background-position: top; 
 }
 
-.jumbotron img {
-	width: 50%;
-	opacity: 0;
-	-moz-transition: opacity 5s; /* Firefox 4 */
-	-webkit-transition: opacity 5s; /* Safari and Chrome */
-	-o-transition: opacity 5s;
-	transition: opacity 5s;
-	}
+
+
+.navbar-inverse {
+	background: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0)
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+@media (max-width: 2000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
