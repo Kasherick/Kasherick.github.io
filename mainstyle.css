@@ -23,7 +23,7 @@ body{
 .navbar-inverse .navbar-toggle {
     border-color: white;
     background: #5224C1;
-    padding-right: 8%
+    margin-right: 8%;
 }
 
 /* Large Devices, Wide Screens */
