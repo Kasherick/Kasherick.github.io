@@ -2,44 +2,25 @@ body{
 	background-color: rgb(14, 11, 22);
 }
 
-#mainheader {
-	position: relative;
-	background: url('images/bathtubbanner.png') center no-repeat;
-	background-size: cover;
-	min-width: 750px;
-	max-width: 1200px;
-	height: 608px;
-	margin: auto;
+.jumbotron {
+	background-color: blue;
+	height: 100vh;
+	background-image:
+    repeating-radial-gradient(
+      circle at center,
+      #8E18BD,
+      #BF005E
+    );
+
+    display: flex;
+    align-items: center;
 }
 
-.navbar {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-}
-
-.navbar ul {
-	display: inline-block;
-	width: 100%;
-	padding: 0px;
-	background-color: rgba(92, 4, 184, .4);
-}
-
-.navbar ul li {
-	display: inline;
-	margin-right: 20px;
-	font-size: 42px;
-	color: white;
-	font-family: 'Open Sans';
-}
-
-.navbar ul li a {
-	color: white;
-	text-decoration: none;
-}
-
-.navbar ul li a:hover{
-	color: rgb(171,3,161);
-}
-
+.jumbotron img {
+	width: 50%;
+	opacity: 0;
+	-moz-transition: opacity 5s; /* Firefox 4 */
+	-webkit-transition: opacity 5s; /* Safari and Chrome */
+	-o-transition: opacity 5s;
+	transition: opacity 5s;
+	}
