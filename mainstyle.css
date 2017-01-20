@@ -38,3 +38,12 @@ body{
     display:inline-block;
     float:none;
 }
+
+.jumbotron img {
+	width: 50%;
+	opacity: 0;
+	-moz-transition: opacity 5s; /* Firefox 4 */
+	-webkit-transition: opacity 5s; /* Safari and Chrome */
+	-o-transition: opacity 5s;
+	transition: opacity 5s;
+	}
