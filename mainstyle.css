@@ -1,13 +1,19 @@
+@font-face {
+	font-family: "Comfortaa";
+	src: local("Comfortaa"), url("Comfortaa-Regular.ttf") format("truetype");
+}
+
 body{
 	background-color: rgb(14, 11, 22);
 }
 
 .jumbotron {
-	background-color: blue;
-	height: 70vh;
+	height: 80vh;
 	background-image: url(images/backbanner.jpg);
     background-size: cover;
     background-position: top; 
+    display: flex;
+    border-bottom: 10px solid #0F5DA7;
 }
 
 .navbar-inverse {
@@ -16,19 +22,29 @@ body{
 	padding-top: 8%;
 }
 
+.navbar-inverse .navbar-nav>li {
+	float: none;
+}
+
 .navbar-inverse .navbar-nav>li>a {
 	color: white;
+	font-size: 32px;
+	line-height: 2;
+	font-family: 'Comfortaa', cursive;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #0F5DA7;
+	width: 44px;
+	margin: 6px auto 6px auto;
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: white;
-    background: #5224C1;
-    margin-right: 8%;
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 2000px) {
-	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {background-color: green;}
+    border-color: #0F5DA7;
+    background: #EFEDDE;
+    float:left;
+    margin-left: 8%;
+    border-radius: 40px;
 }
 
 .navbar-collapse {
@@ -40,10 +56,32 @@ body{
 }
 
 .jumbotron img {
-	width: 50%;
+	width: 200px;
 	opacity: 0;
 	-moz-transition: opacity 5s; /* Firefox 4 */
 	-webkit-transition: opacity 5s; /* Safari and Chrome */
 	-o-transition: opacity 5s;
 	transition: opacity 5s;
+	align-self: center;
+	margin-top: 150px
 	}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 2000px) {
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {background-color: #0F5DA7;}
+}
+
+@media only screen and (min-width : 1024px) {
+	.jumbotron img{
+		width: 275px;
+	}
+}
+
+/*@media only screen and (max-width : 1024px) {
+	.navbar-inverse .navbar-toggle .icon-bar {
+		width: 44px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+}
+*/
