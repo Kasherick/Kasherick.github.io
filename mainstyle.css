@@ -9,6 +9,7 @@ body{
 
 .jumbotron {
 	height: 80vh;
+	max-height: 600px;
 	background-image: url(images/backbanner.jpg);
     background-size: cover;
     background-position: top; 
@@ -19,7 +20,7 @@ body{
 .navbar-inverse {
 	background-color: rgba(0, 0, 0, 0);
 	border-width: 0;
-	padding-top: 8%;
+	margin-top: 8%;
 }
 
 .navbar-inverse .navbar-nav>li {
@@ -55,8 +56,33 @@ body{
     float:none;
 }
 
+ul.social-box {
+	position: absolute;
+	width: 130px;
+	height: 40px;
+	background-color: white;
+	border: 1px solid #0F5DA7;
+	border-radius: 40px;
+	right: 8%;
+	margin-top: 6%;
+	padding-left: 0;
+}
+
+ul.social-box li {
+	display: inline-block;
+	padding: 0px;
+	margin: 0;
+	width: 25px;
+}
+/*
+ul.social-box li a {
+	position: relative;
+	z-index: 9999;
+}
+*/
 .jumbotron img {
 	width: 200px;
+	border: white 2px solid;
 	opacity: 0;
 	-moz-transition: opacity 5s; /* Firefox 4 */
 	-webkit-transition: opacity 5s; /* Safari and Chrome */
@@ -65,6 +91,19 @@ body{
 	align-self: center;
 	margin-top: 150px
 	}
+
+.jumbotron img.social-media{
+	float: left;
+	position: relative;
+	z-index: 4;
+	margin: 10px;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 2000px) {
