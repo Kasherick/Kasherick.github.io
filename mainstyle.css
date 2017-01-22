@@ -1,11 +1,28 @@
+/*Colors: white: #EFEDDE
+		  light-blue: #7CA3CA 
+		  light-pink: #EA90B4
+		  dark-blue: #0F5DA7
+		  dark-pink: #F2649C*/
+
 @font-face {
 	font-family: "Comfortaa";
-	src: local("Comfortaa"), url("Comfortaa-Regular.ttf") format("truetype");
+	src: local("Comfortaa"), url("fonts/Comfortaa-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Portico Vintage";
+	src: url("fonts/Portico Vintage.otf") format("opentype");
+}
+@font-face {
+	font-family: "Portico Outline";
+	src: url("fonts/Portico Outline.otf") format("opentype");
 }
 
 body{
-	background-color: rgb(14, 11, 22);
+	background-color: #7CA3CA;	
+	font-family: 'Comfortaa', cursive;
 }
+
+/*Styling jumbotron*/
 
 .jumbotron {
 	height: 80vh;
@@ -15,7 +32,10 @@ body{
     background-position: top; 
     display: flex;
     border-bottom: 10px solid #0F5DA7;
+    margin-bottom: 0px;
 }
+
+/*Making navbar opaque and setting position from top*/
 
 .navbar-inverse {
 	background-color: rgba(0, 0, 0, 0);
@@ -23,16 +43,21 @@ body{
 	margin-top: 8%;
 }
 
+/*Centering menu items when menu drops down*/
+
 .navbar-inverse .navbar-nav>li {
 	float: none;
 }
 
+/*Setting font properties for menu*/
+
 .navbar-inverse .navbar-nav>li>a {
-	color: white;
+	color: #EFEDDE;
 	font-size: 32px;
 	line-height: 2;
-	font-family: 'Comfortaa', cursive;
 }
+
+/*Setting properties for lines in the hamburger*/
 
 .navbar-inverse .navbar-toggle .icon-bar {
 	background-color: #0F5DA7;
@@ -40,6 +65,7 @@ body{
 	margin: 6px auto 6px auto;
 }
 
+/*Setting properies for the hamburger*/
 .navbar-inverse .navbar-toggle {
     border-color: #0F5DA7;
     background: #EFEDDE;
@@ -48,41 +74,32 @@ body{
     border-radius: 40px;
 }
 
+.navbar-inverse .navbar-toggle:hover {
+    background: #0E0816;
+}
+
+.navbar-inverse .navbar-toggle:after {
+    background: #0E0816;
+}
+
+/*Aligning text in the menu to the center*/
+
 .navbar-collapse {
   text-align:center;
 }
+
+/*Moving the hamburger to the left side*/
+
 .navbar-nav {
     display:inline-block;
     float:none;
 }
 
-ul.social-box {
-	position: absolute;
-	width: 130px;
-	height: 40px;
-	background-color: white;
-	border: 1px solid #0F5DA7;
-	border-radius: 40px;
-	right: 8%;
-	margin-top: 6%;
-	padding-left: 0;
-}
+/*Animation and properties for d and c logo*/
 
-ul.social-box li {
-	display: inline-block;
-	padding: 0px;
-	margin: 0;
-	width: 25px;
-}
-/*
-ul.social-box li a {
-	position: relative;
-	z-index: 9999;
-}
-*/
 .jumbotron img {
 	width: 200px;
-	border: white 2px solid;
+	border: #F6F6F6 2px solid;
 	opacity: 0;
 	-moz-transition: opacity 5s; /* Firefox 4 */
 	-webkit-transition: opacity 5s; /* Safari and Chrome */
@@ -92,18 +109,33 @@ ul.social-box li a {
 	margin-top: 150px
 	}
 
-.jumbotron img.social-media{
-	float: left;
-	position: relative;
-	z-index: 4;
-	margin: 10px;
-	width: 20px;
-	height: 20px;
-	margin-left: 10px;
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
 }
 
+h2 {
+	width: 400px;
+	text-align: center;
+	font-family: 'Portico Outline';
+	font-size: 52px;
+	color: #EFEDDE;
+	font-size: 50px;
+	text-shadow: #F2649C 4px 3px 0px;
+	border: #EFEDDE 2px solid;
+	border-radius: 30px;
+	box-shadow: #F2649C 4px 3px 0px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
 
+div img {
+	width: 100%;
+}
 
+.imgstyle {
+	border: #0F5DA7 solid 10px;
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 2000px) {
@@ -115,6 +147,45 @@ ul.social-box li a {
 		width: 275px;
 	}
 }
+
+
+/*Tested social media linkage in jumbotron*/
+
+/*ul.social-box {
+	position: absolute;
+	width: 130px;
+	height: 40px;
+	background-color: white;
+	border: 1px solid #0F5DA7;
+	border-radius: 40px;
+	right: 8%;
+	margin-top: 5%;
+	padding-left: 0;
+}
+
+ul.social-box li {
+	display: inline-block;
+	padding: 0px;
+	margin: 0;
+	width: 25px;
+}
+
+ul.social-box li a {
+	position: relative;
+	z-index: 9999;
+}
+
+
+.jumbotron img.social-media{
+	float: left;
+	position: relative;
+	z-index: 4;
+	margin: 10px;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}*/
+
 
 /*@media only screen and (max-width : 1024px) {
 	.navbar-inverse .navbar-toggle .icon-bar {
