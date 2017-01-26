@@ -2,7 +2,8 @@
 		  light-blue: #7CA3CA 
 		  light-pink: #EA90B4
 		  dark-blue: #0F5DA7
-		  dark-pink: #F2649C*/
+		  dark-pink: #F2649C
+		  #AE23A3*/
 
 @font-face {
 	font-family: "Comfortaa";
@@ -21,6 +22,29 @@ body{
 	background-color: #7CA3CA;	
 	font-family: 'Comfortaa', cursive;
 }
+
+/*div.leftSide {
+	height: 5000px;
+	width: 300px;
+	background-image: url(images/sideBig.png);
+	position: absolute;
+	z-index:-5;
+	background-repeat: repeat-y;
+	background-position: contain;
+	margin-left: 75px;
+}
+
+div.rightSide {
+	height: 5000px;
+	width: 300px;
+	background-image: url(images/sideBig.png);
+	position: fixed;
+	z-index:-5;
+	background-repeat: repeat-y;
+	background-position: contain;
+	margin-right: 75px;
+	float: right;
+}*/
 
 /*Styling jumbotron*/
 
@@ -69,17 +93,25 @@ body{
 .navbar-inverse .navbar-toggle {
     border-color: #0F5DA7;
     background: #EFEDDE;
-    float:left;
+    float: left;
     margin-left: 8%;
     border-radius: 40px;
 }
 
 .navbar-inverse .navbar-toggle:hover {
-    background: #0E0816;
+    background: #EFEDDE;
 }
 
 .navbar-inverse .navbar-toggle:after {
-    background: #0E0816;
+    background: #EFEDDE;
+}
+
+.navbar-inverse .navbar-toggle:active {
+	background-color: #EFEDDE;
+}
+
+.navbar-inverse .navbar-toggle:active:focus {
+  background-color: #EFEDDE; 
 }
 
 /*Aligning text in the menu to the center*/
@@ -109,7 +141,7 @@ body{
 	margin-top: 150px
 	}
 
-.container-fluid {
+.container {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -149,6 +181,7 @@ div img {
 		width: 275px;
 	}
 }
+
 
 
 /*Tested social media linkage in jumbotron*/
